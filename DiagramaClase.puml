@@ -1,0 +1,81 @@
+@startuml
+skin rose
+
+package Diagrama {
+    abstract class Instrumento {
+        -codigo: String
+        -precio: double
+        -stock: int
+        -material: String
+        +Instrumento(codigo: String,precio: double,stock: int,material: String)
+        +getCodigo(): String
+        +getPrecio(): double
+        +getStock(): int
+        +setStock(stock: int): void
+    }
+
+    class Cuerda {
+        -modeloInst: String
+        -cuerda: String
+        -numeroCuerdas: int
+        -tipo: String
+        +Cuerda(codigo: String, precio: double, stock: int, material: String
+        modeloInst: String, cuerda: String, numeroCuerdas: int, tipo: String)
+        +getInstrumento(): String
+        +getCuerda(): String
+        +getTipo(): String
+
+    }
+    Cuerda--|>Instrumento
+
+    class Percusion {
+        -modeloInst: String
+        -tipo: String
+        -altura: double
+        +Percusion(codigo: String, precio: double, stock: int, material: String
+        modeloInst: String ,tipo: String, altura: double)
+        +getModeloInst(): String
+        +getTipo(): String
+        +getAltura(): double
+    }
+    Percusion--|>Instrumento
+
+    class Viento {
+        -modeloInst: String
+        +Viento(codigo: String, precio: double, stock: int, material: String
+        modeloInst: String)
+        +getModeloInst(): String
+    }
+    Viento--|>Instrumento
+
+    class ListaInstrumentos {
+        -listaInstrumentos: instrumentos []
+        -cantidadActual: int
+        -cantidadMax: int
+        +ListaInstrumentos(cantidadMax: int)
+        +getCantidadActual(): int
+        +getCantidadMax(): int
+        +agregar(instrumento: Instrumento): void
+        +getInstrumento(posicion: int): Instrumento
+    }
+    ListaInstrumentos o->"*" Instrumento
+}
+
+package servicios {
+
+    interface Interface{
+    +menu(): void
+    +agregarInstrumento(instrumento: Instrumento): void
+    +vender(codigo: int): void
+    +consultarInventario(codigo: int): void
+    +cierre(): void
+    }
+
+    class InterfaceImpl{
+        -listadoInstrumentos: ListaInstrumentos
+        +InterfaceImpl()
+    }
+    InterfaceImpl..|> Interface
+}
+
+@enduml

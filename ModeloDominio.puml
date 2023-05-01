@@ -1,0 +1,32 @@
+@startuml
+skin rose
+
+package Modelo {
+    abstract class Instrumento {
+        -codigo
+        -precio
+        -stock
+        -material
+    }
+
+    class Cuerda {
+        -instrumento
+        -cuerda
+        -numeroCuerdas
+        -tipo
+    }
+    Cuerda--|>Instrumento
+
+    class Percusion {
+        -instrumento
+        -tipo
+        -altura
+    }
+    Percusion--|>Instrumento
+
+    class Viento {
+        -instrumento
+    }
+    Viento--|>Instrumento
+}
+@enduml
