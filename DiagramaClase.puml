@@ -65,8 +65,10 @@ package servicios {
 
     interface Interface{
     +menu(): void
-    +agregarInstrumento(instrumento: Instrumento): void
+    +agregarInstrumento(ListaInstrumentos: instrumento[]): void
     +vender(codigo: int): void
+    +verificarStock(codigo: int): boolean
+    +despliegueBoleta(codigo: int):void
     +consultarInventario(codigo: int): void
     +cierre(): void
     }
