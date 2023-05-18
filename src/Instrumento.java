@@ -24,6 +24,10 @@ abstract class Instrumento {
         return stock;
     }
 
+    public String getMaterial() {
+        return material;
+    }
+
     public void setStock(int stock) {
         this.stock = stock;
     }

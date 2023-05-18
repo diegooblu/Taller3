@@ -9,24 +9,12 @@ package Modelo {
         -material
     }
 
-    class Cuerda {
-        -instrumento
-        -cuerda
-        -numeroCuerdas
-        -tipo
+    annotation nota {
+        Habran 3 tipos de instrumentos: Cuerda, viento y
+        percusión. Cada uno con algunos atributos más,
+        como por ejemplo en cuerdas se tendra, tipo de
+        cuerda, número de cuerda, etc.
     }
-    Cuerda--|>Instrumento
-
-    class Percusion {
-        -instrumento
-        -tipo
-        -altura
-    }
-    Percusion--|>Instrumento
-
-    class Viento {
-        -instrumento
-    }
-    Viento--|>Instrumento
+    Instrumento .. nota
 }
 @enduml

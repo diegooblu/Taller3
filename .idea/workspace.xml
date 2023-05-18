@@ -4,19 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c013829-f403-4e4c-a9b4-ab122989e256" name="Changes" comment="Commit del primer avance para el taller 3 de programacion avanzada, fecha: 01.05.2023">
-      <change afterPath="$PROJECT_DIR$/src/interfaceImpl.java" afterDir="false" />
+    <list default="true" id="5c013829-f403-4e4c-a9b4-ab122989e256" name="Changes" comment="Segundo commit con los avances para el taller 3 de programacion avanzada, fecha: 06.05.2023">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BeatTheRhythm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BeatTheRhythm.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DiagramaClase.puml" beforeDir="false" afterPath="$PROJECT_DIR$/DiagramaClase.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModeloDominio.puml" beforeDir="false" afterPath="$PROJECT_DIR$/ModeloDominio.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BeatTheRhythm/Cuerda.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BeatTheRhythm/Cuerda.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BeatTheRhythm/Interface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BeatTheRhythm/ListaInstrumentos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BeatTheRhythm/Percusion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BeatTheRhythm/Percusion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BeatTheRhythm/Viento.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BeatTheRhythm/Viento.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BeatTheRhythm/interfaceImpl.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cuerda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cuerda.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Instrumento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Instrumento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ListaInstrumentos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListaInstrumentos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Percusion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Percusion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Viento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Viento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaceImpl.java" afterDir="false" />
     </list>
-    <list id="de30841a-0a2d-4fff-a505-bac67ca8519e" name="Changes by diego" comment="">
+    <list id="de30841a-0a2d-4fff-a505-bac67ca8519e" name="Changes by diego" comment="Changes by diego, Del segundo commit, fecha: 06-05-2023">
       <change beforePath="$PROJECT_DIR$/DiagramaClase.puml" beforeDir="false" afterPath="$PROJECT_DIR$/DiagramaClase.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Percusion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Percusion.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +45,31 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/DiagramaClase.puml">
+      <ranges>
+        <range start1="26" end1="26" start2="26" end2="27" changelist="de30841a-0a2d-4fff-a505-bac67ca8519e" />
+        <range start1="59" end1="59" start2="60" end2="61" changelist="de30841a-0a2d-4fff-a505-bac67ca8519e" />
+        <range start1="80" end1="80" start2="82" end2="83" changelist="5c013829-f403-4e4c-a9b4-ab122989e256" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/Percusion.java">
+      <ranges>
+        <range start1="0" end1="1" start2="0" end2="1" changelist="5c013829-f403-4e4c-a9b4-ab122989e256" />
+        <range start1="6" end1="7" start2="6" end2="7" changelist="5c013829-f403-4e4c-a9b4-ab122989e256" />
+        <range start1="8" end1="9" start2="8" end2="9" changelist="5c013829-f403-4e4c-a9b4-ab122989e256" />
+        <range start1="23" end1="24" start2="23" end2="24" changelist="de30841a-0a2d-4fff-a505-bac67ca8519e" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/Interface.java">
+      <ranges>
+        <range start1="14" end1="15" start2="14" end2="15" changelist="5c013829-f403-4e4c-a9b4-ab122989e256" />
+        <range start1="27" end1="28" start2="27" end2="28" changelist="5c013829-f403-4e4c-a9b4-ab122989e256" />
+        <range start1="32" end1="33" start2="32" end2="33" changelist="de30841a-0a2d-4fff-a505-bac67ca8519e" />
+        <range start1="34" end1="35" start2="34" end2="35" changelist="5c013829-f403-4e4c-a9b4-ab122989e256" />
+      </ranges>
+    </file>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -44,17 +78,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultPlantUmlFileTemplate": "UML Class",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/necul/Downloads/StdUCN-7.1.jar",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultPlantUmlFileTemplate&quot;: &quot;UML Class&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/necul/Downloads/StdUCN-7.1.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="BeatTheRhythm" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -71,11 +119,28 @@
       <option name="project" value="LOCAL" />
       <updated>1682979358217</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Segundo commit con los avances para el taller 3 de programacion avanzada, fecha: 06.05.2023">
+      <created>1683387189700</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683387189701</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Changes by diego, Del segundo commit, fecha: 06-05-2023">
+      <created>1683387231982</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683387231982</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit del primer avance para el taller 3 de programacion avanzada, fecha: 01.05.2023" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit del primer avance para el taller 3 de programacion avanzada, fecha: 01.05.2023" />
+    <MESSAGE value="Segundo commit con los avances para el taller 3 de programacion avanzada, fecha: 01.05.2023" />
+    <MESSAGE value="Segundo commit con los avances para el taller 3 de programacion avanzada, fecha: 06.05.2023" />
+    <MESSAGE value="Changes by diego, Del segundo commit, fecha: 06-05-2023" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes by diego, Del segundo commit, fecha: 06-05-2023" />
   </component>
 </project>

@@ -1,4 +1,4 @@
-public class Cuerda extends Instrumento{
+public final class Cuerda extends Instrumento{
 
     String modeloInst;
     String cuerda;
@@ -19,6 +19,10 @@ public class Cuerda extends Instrumento{
 
     public String getCuerda() {
         return cuerda;
+    }
+
+    public int getNumeroCuerda() {
+        return numeroCuerda;
     }
 
     public String getTipo() {

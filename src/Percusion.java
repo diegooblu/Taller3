@@ -1,12 +1,12 @@
-public class Percusion extends Instrumento{
+public final class Percusion extends Instrumento{
 
     private String modeloInst;
 
     private String tipo;
 
-    private double altura;
+    private String altura;
 
-    public Percusion(String codigo, double precio, int stock, String material, String modeloInst, String tipo, double altura) {
+    public Percusion(String codigo, double precio, int stock, String material, String modeloInst, String tipo, String altura) {
         super(codigo, precio, stock, material);
         this.modeloInst = modeloInst;
         this.tipo = tipo;

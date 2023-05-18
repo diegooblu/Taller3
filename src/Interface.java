@@ -12,7 +12,7 @@ public interface Interface {
     * atributos dependiendo de que tipo de instrumento de hable(viento, cuerda, percucion)
     */
    void agregarInstrumento();
-
+   
    /**
     * Metodo el cual busca un intrumento y revisa su stock
     * si hay disponible, lo vende y resta 1 al stock actual del instrumento
@@ -25,14 +25,14 @@ public interface Interface {
     * @param codigo
     * @return
     */
-   boolean verificarStock(int codigo);
+   boolean verificarStock(String codigo);
 
    /**
     * al realizar una venta, se utiliza este metodo para desplegar por pantalla
     * que producto fue vendido y cual fue su valor
     * @param codigo
     */
-   void despliegueBoleta(int codigo);
+   void despliegueBoleta(String nombreClase, int posicion);
 
    /**
     * Este metodo busca despliega el inventario de un instrumento en especifico

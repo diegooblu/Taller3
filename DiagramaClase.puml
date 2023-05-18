@@ -78,6 +78,7 @@ package servicios {
         +InterfaceImpl()
     }
     InterfaceImpl..|> Interface
+    InterfaceImpl --> ListaInstrumentos
 }
 
 @enduml

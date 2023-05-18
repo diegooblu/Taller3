@@ -1,4 +1,4 @@
-public class Viento extends Instrumento{
+public final class Viento extends Instrumento{
 
     private String modeloInst;
 
