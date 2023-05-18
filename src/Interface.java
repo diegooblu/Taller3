@@ -30,7 +30,7 @@ public interface Interface {
    /**
     * al realizar una venta, se utiliza este metodo para desplegar por pantalla
     * que producto fue vendido y cual fue su valor
-    * @param codigo
+    * @param
     */
    void despliegueBoleta(String nombreClase, int posicion);
 

@@ -21,7 +21,7 @@ public final class Percusion extends Instrumento{
         return tipo;
     }
 
-    public double getAltura() {
+    public String getAltura() {
         return altura;
     }
 }

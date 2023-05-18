@@ -24,6 +24,7 @@ package Diagrama {
         +getInstrumento(): String
         +getCuerda(): String
         +getTipo(): String
+        -getNumeroCuerdas(): int
 
     }
     Cuerda--|>Instrumento
@@ -57,6 +58,7 @@ package Diagrama {
         +getCantidadMax(): int
         +agregar(instrumento: Instrumento): void
         +getInstrumento(posicion: int): Instrumento
+        +Informacion(nombreClase: String, posicion: int)
     }
     ListaInstrumentos o->"*" Instrumento
 }
