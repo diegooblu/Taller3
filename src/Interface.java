@@ -17,6 +17,7 @@ public interface Interface {
     * Metodo el cual busca un intrumento y revisa su stock
     * si hay disponible, lo vende y resta 1 al stock actual del instrumento
     */
+
    void vender();
 
    /**

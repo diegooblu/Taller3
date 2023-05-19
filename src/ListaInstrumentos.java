@@ -16,6 +16,11 @@ public class ListaInstrumentos {
         return cantidadActual;
     }
 
+    /**
+     * Subprograma que entrega el instrumento de una posicion especifica en la lista
+     * @param pos es la posicion en la cual se buscara el instrumento
+     * @return el instrumento en la posicion mencionada
+     */
     public Instrumento obtenerInstrumento(int pos){
         if(pos < 0 || pos >= this.cantidadActual){
             return null;
@@ -27,6 +32,11 @@ public class ListaInstrumentos {
         return cantidadMax;
     }
 
+
+    /**
+     * Subprograma que agrega un instrumento a la lista
+     * @param instrumento nuevo que se quiera agregar
+     */
     public void agregar (Instrumento instrumento) {
         if(this.cantidadActual == this.cantidadMax){
             return;
@@ -35,6 +45,11 @@ public class ListaInstrumentos {
         this.cantidadActual++;
     }
 
+    /**
+     * Subprograma que despliega la informacion de un instrumento dado el tipo de instrumento que sea
+     * @param nombreClase con la cual se identificaria el nombre de la clase del instrumento
+     * @param posicion en donde se encontraria ubicado el instrumento
+     */
     public void informacion (String nombreClase, int posicion) {
         switch (nombreClase) {
             case "Cuerda" -> {

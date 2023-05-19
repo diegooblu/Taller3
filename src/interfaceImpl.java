@@ -1,8 +1,6 @@
 import ucn.StdIn;
 import ucn.StdOut;
 
-import java.util.Random;
-
 public class interfaceImpl implements Interface{
 
     private ListaInstrumentos listadoInstrumentos;
@@ -46,6 +44,11 @@ public class interfaceImpl implements Interface{
         }
     }
 
+    /**
+     *Este metodo nos permite agregar instrumentos en general y deriva a los
+     * siguientes subprogramas para agregar segun el tipo de instrumento que se
+     * desee agregar
+     */
     @Override
     public void agregarInstrumento() {
         String tipoInstrumento = "";
@@ -78,6 +81,9 @@ public class interfaceImpl implements Interface{
         }
     }
 
+    /**
+     * Añade un instrumento de tipo cuerda con sus respectivos atributos
+     */
     public void agregarInstCuerda() {
         String codigo;
         StdOut.println("Ingrese los siguientes datos del instrumento de percusion.");
@@ -109,6 +115,9 @@ public class interfaceImpl implements Interface{
         listadoInstrumentos.agregar(instrumento);
     }
 
+    /**
+     * Añade un instrumento de tipo Viento con sus respectivos atributos
+     */
     public void agregarInstViento() {
         String codigo;
         StdOut.println("Ingrese los siguientes datos del instrumento de viento.");
@@ -134,6 +143,9 @@ public class interfaceImpl implements Interface{
         listadoInstrumentos.agregar(instrumento);
     }
 
+    /**
+     * Añade un instrumento de tipo Persusion con sus respectivos atributos
+     */
     public void agregarInstPercusion() {
         String codigo;
         StdOut.println("Ingrese los siguientes datos del instrumento de percusion.");
@@ -163,6 +175,13 @@ public class interfaceImpl implements Interface{
         listadoInstrumentos.agregar(instrumento);
     }
 
+    /**
+     * subprograma que verifica que el codigo ingresado por pantalla coincida con algun
+     * instrumento de la lista, devuelve un false si no lo encuentra y un true
+     * si lo hace
+     * @param codigo el cual se verificaria la existencia previa
+     * @return true si es que exisita previamente, false si es que no existia
+     */
     public boolean verificarCodigo (String codigo) {
         int largoLista = listadoInstrumentos.getCantidadActual();
         String auxCodigo;
@@ -176,6 +195,10 @@ public class interfaceImpl implements Interface{
         return false;
     }
 
+    /**
+     * Metodo que pide codigo por pantalla y despliega las caracteristicas del instrumento, solo si
+     * hay stock disponible, le quita 1 al stock del instrumento luego de ser vendido
+     */
     @Override
     public void vender() {
         StdOut.println("Ingrese el codigo del instrumento a vender: ");
@@ -184,9 +207,8 @@ public class interfaceImpl implements Interface{
         if (verificar) {
             StdOut.println("'No hay stock o no existe el instrumento que esta buscando!");
         } else {
-            int largoLista = listadoInstrumentos.getCantidadActual();
-            String auxCodigo = "";
-            for (int i = 0; i < largoLista; i++) {
+            String auxCodigo;
+            for (int i = 0; i < listadoInstrumentos.getCantidadActual(); i++) {
                 Instrumento instrumento = listadoInstrumentos.obtenerInstrumento(i);
                 auxCodigo = instrumento.getCodigo();
                 if (codigoInst.equals(auxCodigo)) {
@@ -205,7 +227,7 @@ public class interfaceImpl implements Interface{
                         case "Percusion" -> {
                             StdOut.println("Esta comprando un instrumento de percusion con la siguiente informacion:");
                             listadoInstrumentos.informacion("Percusion",i);
-                            StdOut.print("¿Esta seguro de realizar la compra? [Si / No]");
+                            StdOut.print("¿Esta seguro de realizar la compra? [Si / No]: ");
                             String confirmacion = StdIn.readString();
                             if(confirmacion.equalsIgnoreCase("Si")){
                                 despliegueBoleta("Percusion",i);
@@ -215,7 +237,7 @@ public class interfaceImpl implements Interface{
                         case "Viento" -> {
                             StdOut.println("Esta comprando un instrumento de viento con la siguiente informacion:");
                             listadoInstrumentos.informacion("Viento",i);
-                            StdOut.print("¿Esta seguro de realizar la compra? [Si / No]");
+                            StdOut.print("¿Esta seguro de realizar la compra? [Si / No]: ");
                             String confirmacion = StdIn.readString();
                             if(confirmacion.equalsIgnoreCase("Si")){
                                 despliegueBoleta("Viento",i);
@@ -237,7 +259,15 @@ public class interfaceImpl implements Interface{
      */
     @Override
     public boolean verificarStock(String codigo) {
-        return false;
+        for (int i = 0; i < listadoInstrumentos.getCantidadActual(); i++){
+            Instrumento instrumento = listadoInstrumentos.obtenerInstrumento(i);
+            if (codigo.equals(instrumento.getCodigo())){
+                if (instrumento.getStock() > 0){
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 
     /**
@@ -263,7 +293,55 @@ public class interfaceImpl implements Interface{
      */
     @Override
     public void consultarInventario() {
-
+        String tipoBusqueda;
+        StdOut.println("""
+                Seleccione tipo de busqueda:
+                                
+                [1] Busqueda Especifica.
+                [2] Consulta Completa.
+                                
+                """);
+        tipoBusqueda = StdIn.readString();
+        switch (tipoBusqueda){
+            case "1" -> {
+                StdOut.println("Ingrese codigo del intrumento a buscar");
+                String codigo = StdIn.readString();
+                boolean verificar = verificarCodigo(codigo);
+                if (verificar){
+                    StdOut.println("'No hay stock o no existe el instrumento que esta buscando!");
+                    }
+                else {
+                    String auxCodigo;
+                    for (int i = 0; i < listadoInstrumentos.getCantidadActual(); i++) {
+                        Instrumento instrumento = listadoInstrumentos.obtenerInstrumento(i);
+                        auxCodigo = instrumento.getCodigo();
+                        if (codigo.equals(auxCodigo)) {
+                            String nombreClase = instrumento.getClass().getName();
+                            switch (nombreClase) {
+                                case "Cuerda" -> listadoInstrumentos.informacion("Cuerda", i);
+                                case "Percusion" -> listadoInstrumentos.informacion("Percusion", i);
+                                case "Viento" -> listadoInstrumentos.informacion("Viento", i);
+                            }
+                            break;
+                        }
+                    }
+                }
+            }
+            case "2" -> {
+                for (int i = 0 ; i < listadoInstrumentos.getCantidadActual(); i++) {
+                    Instrumento instrumento = listadoInstrumentos.obtenerInstrumento(i);
+                    String nombreClase = instrumento.getClass().getName();
+                    StdOut.println("Instrumento N°" + i);
+                    switch (nombreClase) {
+                        case "Cuerda" -> listadoInstrumentos.informacion("Cuerda", i);
+                        case "Percusion" -> listadoInstrumentos.informacion("Percusion", i);
+                        case "Viento" -> listadoInstrumentos.informacion("Viento", i);
+                    }
+                    StdOut.println("");
+                }
+            }
+            default -> StdOut.println("Opcion no valida, intente nuevamente");
+        }
     }
 
     /**
