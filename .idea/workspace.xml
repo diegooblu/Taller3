@@ -4,28 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c013829-f403-4e4c-a9b4-ab122989e256" name="Changes" comment="Segundo commit con los avances para el taller 3 de programacion avanzada, fecha: 06.05.2023">
+    <list default="true" id="5c013829-f403-4e4c-a9b4-ab122989e256" name="Changes" comment="Tercer commit con los avances para el taller 3 de programacion avanzada, Parte 2, fecha: 18.05.2023.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DiagramaClase.puml" beforeDir="false" afterPath="$PROJECT_DIR$/DiagramaClase.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ModeloDominio.puml" beforeDir="false" afterPath="$PROJECT_DIR$/ModeloDominio.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BeatTheRhythm/Cuerda.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BeatTheRhythm/Cuerda.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BeatTheRhythm/Interface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BeatTheRhythm/ListaInstrumentos.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BeatTheRhythm/Percusion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BeatTheRhythm/Percusion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BeatTheRhythm/Viento.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BeatTheRhythm/Viento.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BeatTheRhythm/interfaceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cuerda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cuerda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Instrumento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Instrumento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BeatTheRhythm/Instrumento.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BeatTheRhythm/Instrumento.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ListaInstrumentos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListaInstrumentos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Percusion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Percusion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Viento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Viento.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/interfaceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaceImpl.java" afterDir="false" />
     </list>
-    <list id="de30841a-0a2d-4fff-a505-bac67ca8519e" name="Changes by diego" comment="Changes by diego, Del segundo commit, fecha: 06-05-2023">
-      <change beforePath="$PROJECT_DIR$/DiagramaClase.puml" beforeDir="false" afterPath="$PROJECT_DIR$/DiagramaClase.puml" afterDir="false" />
+    <list id="50ca16b4-bf75-4006-a176-d37e0c67e988" name="Changes by diego" comment="">
       <change beforePath="$PROJECT_DIR$/src/Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Percusion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Percusion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ListaInstrumentos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListaInstrumentos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,27 +35,35 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/DiagramaClase.puml">
+    <file path="$PROJECT_DIR$/src/interfaceImpl.java">
       <ranges>
-        <range start1="26" end1="26" start2="26" end2="27" changelist="de30841a-0a2d-4fff-a505-bac67ca8519e" />
-        <range start1="59" end1="59" start2="60" end2="61" changelist="de30841a-0a2d-4fff-a505-bac67ca8519e" />
-        <range start1="80" end1="80" start2="82" end2="83" changelist="5c013829-f403-4e4c-a9b4-ab122989e256" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/Percusion.java">
-      <ranges>
-        <range start1="0" end1="1" start2="0" end2="1" changelist="5c013829-f403-4e4c-a9b4-ab122989e256" />
-        <range start1="6" end1="7" start2="6" end2="7" changelist="5c013829-f403-4e4c-a9b4-ab122989e256" />
-        <range start1="8" end1="9" start2="8" end2="9" changelist="5c013829-f403-4e4c-a9b4-ab122989e256" />
-        <range start1="23" end1="24" start2="23" end2="24" changelist="de30841a-0a2d-4fff-a505-bac67ca8519e" />
+        <range start1="2" end1="4" start2="2" end2="2" changelist="50ca16b4-bf75-4006-a176-d37e0c67e988" />
+        <range start1="9" end1="9" start2="7" end2="11" changelist="5c013829-f403-4e4c-a9b4-ab122989e256" />
+        <range start1="14" end1="14" start2="16" end2="20" changelist="5c013829-f403-4e4c-a9b4-ab122989e256" />
+        <range start1="40" end1="40" start2="46" end2="51" changelist="50ca16b4-bf75-4006-a176-d37e0c67e988" />
+        <range start1="72" end1="72" start2="83" end2="86" changelist="50ca16b4-bf75-4006-a176-d37e0c67e988" />
+        <range start1="103" end1="103" start2="117" end2="120" changelist="50ca16b4-bf75-4006-a176-d37e0c67e988" />
+        <range start1="128" end1="128" start2="145" end2="148" changelist="50ca16b4-bf75-4006-a176-d37e0c67e988" />
+        <range start1="156" end1="156" start2="176" end2="184" changelist="50ca16b4-bf75-4006-a176-d37e0c67e988" />
+        <range start1="159" end1="160" start2="187" end2="188" changelist="5c013829-f403-4e4c-a9b4-ab122989e256" />
+        <range start1="170" end1="170" start2="198" end2="202" changelist="50ca16b4-bf75-4006-a176-d37e0c67e988" />
+        <range start1="178" end1="181" start2="210" end2="212" changelist="50ca16b4-bf75-4006-a176-d37e0c67e988" />
+        <range start1="199" end1="200" start2="230" end2="231" changelist="50ca16b4-bf75-4006-a176-d37e0c67e988" />
+        <range start1="209" end1="210" start2="240" end2="241" changelist="50ca16b4-bf75-4006-a176-d37e0c67e988" />
+        <range start1="223" end1="223" start2="254" end2="260" changelist="5c013829-f403-4e4c-a9b4-ab122989e256" />
+        <range start1="225" end1="226" start2="262" end2="271" changelist="50ca16b4-bf75-4006-a176-d37e0c67e988" />
+        <range start1="228" end1="228" start2="273" end2="279" changelist="5c013829-f403-4e4c-a9b4-ab122989e256" />
+        <range start1="238" end1="238" start2="289" end2="294" changelist="5c013829-f403-4e4c-a9b4-ab122989e256" />
+        <range start1="240" end1="241" start2="296" end2="345" changelist="50ca16b4-bf75-4006-a176-d37e0c67e988" />
+        <range start1="243" end1="243" start2="347" end2="352" changelist="5c013829-f403-4e4c-a9b4-ab122989e256" />
+        <range start1="248" end1="249" start2="357" end2="357" changelist="5c013829-f403-4e4c-a9b4-ab122989e256" />
       </ranges>
     </file>
     <file path="$PROJECT_DIR$/src/Interface.java">
       <ranges>
-        <range start1="14" end1="15" start2="14" end2="15" changelist="5c013829-f403-4e4c-a9b4-ab122989e256" />
-        <range start1="27" end1="28" start2="27" end2="28" changelist="5c013829-f403-4e4c-a9b4-ab122989e256" />
-        <range start1="32" end1="33" start2="32" end2="33" changelist="de30841a-0a2d-4fff-a505-bac67ca8519e" />
-        <range start1="34" end1="35" start2="34" end2="35" changelist="5c013829-f403-4e4c-a9b4-ab122989e256" />
+        <range start1="11" end1="12" start2="11" end2="12" changelist="5c013829-f403-4e4c-a9b4-ab122989e256" />
+        <range start1="19" end1="19" start2="19" end2="20" changelist="50ca16b4-bf75-4006-a176-d37e0c67e988" />
+        <range start1="24" end1="26" start2="25" end2="27" changelist="5c013829-f403-4e4c-a9b4-ab122989e256" />
       </ranges>
     </file>
   </component>
@@ -133,14 +130,30 @@
       <option name="project" value="LOCAL" />
       <updated>1683387231982</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Tercer commit con los avances para el taller 3 de programacion avanzada, fecha: 18.05.2023">
+      <created>1684446392125</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684446392125</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Changes by diego, Del tercer commit, fecha: 18-05-2023">
+      <created>1684446527350</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684446527350</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit del primer avance para el taller 3 de programacion avanzada, fecha: 01.05.2023" />
     <MESSAGE value="Segundo commit con los avances para el taller 3 de programacion avanzada, fecha: 01.05.2023" />
     <MESSAGE value="Segundo commit con los avances para el taller 3 de programacion avanzada, fecha: 06.05.2023" />
+    <MESSAGE value="Tercer commit con los avances para el taller 3 de programacion avanzada, fecha: 18.05.2023" />
     <MESSAGE value="Changes by diego, Del segundo commit, fecha: 06-05-2023" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes by diego, Del segundo commit, fecha: 06-05-2023" />
+    <MESSAGE value="Changes by diego, Del tercer commit, fecha: 18-05-2023" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes by diego, Del tercer commit, fecha: 18-05-2023" />
   </component>
 </project>

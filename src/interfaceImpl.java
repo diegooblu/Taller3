@@ -7,11 +7,19 @@ public class interfaceImpl implements Interface{
 
     private ListaInstrumentos listadoInstrumentos;
 
+    /**
+     * Subprograma base, el cual da inicio al resto de codigo, en el cual se inicia el
+     * listadoInstrumentos y la lectura de archivos previos
+     */
     public interfaceImpl() {
         this.listadoInstrumentos = new ListaInstrumentos(100);
         menu();
     }
 
+    /**
+     * Subprograma que tendra el menu principal por el cual se manejara el usuario,
+     * derivando a los siguientes menus y resto de codigo
+     */
     @Override
     public void menu() {
         String opcionEscogida = "";
@@ -157,7 +165,7 @@ public class interfaceImpl implements Interface{
 
     public boolean verificarCodigo (String codigo) {
         int largoLista = listadoInstrumentos.getCantidadActual();
-        String auxCodigo = "";
+        String auxCodigo;
         for (int i = 0; i < largoLista; i++) {
             Instrumento instrumento = listadoInstrumentos.obtenerInstrumento(i);
             auxCodigo = instrumento.getCodigo();
@@ -221,11 +229,23 @@ public class interfaceImpl implements Interface{
         }
     }
 
+    /**
+     * Subprograma que se utiliza al momento de estar haciendo una compra, con el cual se
+     * confirma si es que hay stock suficiente para realizar la misma
+     * @param codigo con el cual se buscaria el instrumento
+     * @return false si es que hay stock, true si es que no hay stock disponible
+     */
     @Override
     public boolean verificarStock(String codigo) {
         return false;
     }
 
+    /**
+     * Subprograma utilizado en el termino de una compra, para poder entregar la informacion
+     * final de la misma.
+     * @param nombreClase utilizado para conocer que tipo de instrumento es (Cuerda, Viento, Percusion)
+     * @param posicion con la cual encontraremos el instrumento en el listadoInstrumentos
+     */
     @Override
     public void despliegueBoleta(String nombreClase, int posicion) {
         StdOut.println("*-----------------------------------------*");
@@ -236,11 +256,21 @@ public class interfaceImpl implements Interface{
         StdOut.println("*-----------------------------------------*");
     }
 
+    /**
+     * Subprograma con el cual se daria la informacion de todos los instrumentos
+     * agregados en el listadoInstrumentos, para poder conocer cuales estan a
+     * disposicion.
+     */
     @Override
     public void consultarInventario() {
 
     }
 
+    /**
+     * En este subprograma se da el cierre al codigo, guardando los datos recibidos
+     * por listadoInstrumentos, haciendo la escritura del archivo y terminando el
+     * proceso del codigo
+     */
     @Override
     public void cierre() {
 

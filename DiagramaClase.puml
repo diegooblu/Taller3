@@ -24,7 +24,7 @@ package Diagrama {
         +getInstrumento(): String
         +getCuerda(): String
         +getTipo(): String
-        -getNumeroCuerdas(): int
+        +getNumeroCuerdas(): int
 
     }
     Cuerda--|>Instrumento

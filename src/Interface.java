@@ -9,7 +9,7 @@ public interface Interface {
 
    /**
     * Metodo que agrega un nstrumento a la lsta con sus debidos
-    * atributos dependiendo de que tipo de instrumento de hable(viento, cuerda, percucion)
+    * atributos dependiendo de que tipo de instrumento de hable(viento, cuerda, percusion)
     */
    void agregarInstrumento();
    
@@ -22,8 +22,8 @@ public interface Interface {
    /**
     * busca en la lista de instrumentos el Stock del instrumento cuyo codigo
     * es leido de pantalla
-    * @param codigo
-    * @return
+    * @param codigo con el cual se buscaria el instrumento
+    * @return false si es que hay stock
     */
    boolean verificarStock(String codigo);
 
