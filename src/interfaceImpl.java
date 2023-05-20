@@ -238,7 +238,7 @@ public class interfaceImpl implements Interface{
         int stock = StdIn.readInt();
         StdOut.print("Material (Madera, metal, piel): ");
         String material = StdIn.readString();
-        StdOut.print("Modelo instrumento (Bongó, cajón, campanas tubulares, bombo): ");
+        StdOut.print("Modelo instrumento (Bongo, cajón, campanas tubulares, bombo): ");
         String modeloInst = StdIn.readString();
         StdOut.print("Tipo de percusión (Membranófono, idiófono): ");
         String tipoPercusion = StdIn.readString();

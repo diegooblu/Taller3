@@ -32,7 +32,7 @@ package Diagrama {
     class Percusion {
         -modeloInst: String
         -tipo: String
-        -altura: double
+        -altura: String
         +Percusion(codigo: String, precio: double, stock: int, material: String
         modeloInst: String ,tipo: String, altura: double)
         +getModeloInst(): String

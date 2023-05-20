@@ -10,6 +10,11 @@ public interface Interface {
    void menu();
 
    /**
+    * Metodo que lee archivo y agrega instrumentos a la listas
+    */
+   void lecturaArchivo() throws IOException;
+
+   /**
     * Metodo que agrega un nstrumento a la lsta con sus debidos
     * atributos dependiendo de que tipo de instrumento de hable(viento, cuerda, percusion)
     */
