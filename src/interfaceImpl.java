@@ -1,16 +1,89 @@
+import ucn.ArchivoEntrada;
+import ucn.Registro;
 import ucn.StdIn;
 import ucn.StdOut;
+import java.io.IOException;
 
 public class interfaceImpl implements Interface{
 
     private ListaInstrumentos listadoInstrumentos;
 
     /**
+     *Subprograma utilizado para la lectura previa de archivos, añadiendo los instrumentos al inventario,
+     * si es que se encuentran instrumentos con el mismo codigo, se le sumaria el stock al primero que
+     * se añadio.
+     */
+    public void lecturaArchivo () throws IOException {
+        ArchivoEntrada archivo1 = new ArchivoEntrada("csv_prueba.csv");
+        while (!archivo1.isEndFile()){
+            Registro regEnt = archivo1.getRegistro();
+            String codigo = regEnt.getString();
+            double precio = regEnt.getDouble();
+            int stock = regEnt.getInt();
+            String nombreInst = regEnt.getString();
+            if (nombreInst.equalsIgnoreCase("Guitarra") || nombreInst.equalsIgnoreCase("Bajo") ||
+                    nombreInst.equalsIgnoreCase("violin") || nombreInst.equalsIgnoreCase("Arpa")){
+                String cuerda = regEnt.getString();
+                int numeroCuerdas = regEnt.getInt();
+                String material = regEnt.getString();
+                String tipo = regEnt.getString();
+                Instrumento instrumento = new Cuerda(codigo,precio,stock,material,nombreInst,cuerda,numeroCuerdas,tipo);
+                boolean verificar = verificarCodigo(codigo);
+                if (!verificar) {
+                    listadoInstrumentos.agregar(instrumento);
+                } else {
+                    for (int i = 0; i < listadoInstrumentos.getCantidadActual(); i++) {
+                        Instrumento instrumentoAux = listadoInstrumentos.obtenerInstrumento(i);
+                        if (codigo.equals(instrumentoAux.getCodigo())){
+                            instrumentoAux.setStock(instrumentoAux.getStock() + stock);
+                        }
+                    }
+                }
+            }
+            if (nombreInst.equalsIgnoreCase("Bongo") || nombreInst.equalsIgnoreCase("cajón") ||
+                    nombreInst.equalsIgnoreCase("campanas tubulares") || nombreInst.equalsIgnoreCase("bombo")){
+                String tipo = regEnt.getString();
+                String material = regEnt.getString();
+                String altura = regEnt.getString();
+                Instrumento instrumento = new Percusion(codigo,precio,stock,nombreInst,tipo,material,altura);
+                boolean verificar = verificarCodigo(codigo);
+                if (!verificar) {
+                    listadoInstrumentos.agregar(instrumento);
+                } else {
+                    for (int i = 0; i < listadoInstrumentos.getCantidadActual(); i++) {
+                        Instrumento instrumentoAux = listadoInstrumentos.obtenerInstrumento(i);
+                        if (codigo.equals(instrumentoAux.getCodigo())){
+                            instrumentoAux.setStock(instrumentoAux.getStock() + stock);
+                        }
+                    }
+                }
+            }
+            if (nombreInst.equalsIgnoreCase("Trompeta") || nombreInst.equalsIgnoreCase("Saxofon") ||
+                    nombreInst.equalsIgnoreCase("Clarinete") || nombreInst.equalsIgnoreCase("Flauta traversa")) {
+                String material = regEnt.getString();
+                Instrumento instrumento = new Viento(codigo,precio,stock,material,nombreInst);
+                boolean verificar = verificarCodigo(codigo);
+                if (!verificar) {
+                    listadoInstrumentos.agregar(instrumento);
+                } else {
+                    for (int i = 0; i < listadoInstrumentos.getCantidadActual(); i++) {
+                        Instrumento instrumentoAux = listadoInstrumentos.obtenerInstrumento(i);
+                        if (codigo.equals(instrumentoAux.getCodigo())){
+                            instrumentoAux.setStock(instrumentoAux.getStock() + stock);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /**
      * Subprograma base, el cual da inicio al resto de codigo, en el cual se inicia el
      * listadoInstrumentos y la lectura de archivos previos
      */
-    public interfaceImpl() {
+    public interfaceImpl() throws IOException {
         this.listadoInstrumentos = new ListaInstrumentos(100);
+        lecturaArchivo();
         menu();
     }
 
@@ -331,7 +404,7 @@ public class interfaceImpl implements Interface{
                 for (int i = 0 ; i < listadoInstrumentos.getCantidadActual(); i++) {
                     Instrumento instrumento = listadoInstrumentos.obtenerInstrumento(i);
                     String nombreClase = instrumento.getClass().getName();
-                    StdOut.println("Instrumento N°" + i);
+                    StdOut.println("Instrumento N°" + (i + 1));
                     switch (nombreClase) {
                         case "Cuerda" -> listadoInstrumentos.informacion("Cuerda", i);
                         case "Percusion" -> listadoInstrumentos.informacion("Percusion", i);

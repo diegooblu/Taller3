@@ -4,16 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c013829-f403-4e4c-a9b4-ab122989e256" name="Changes" comment="Tercer commit con los avances para el taller 3 de programacion avanzada, Parte 2, fecha: 18.05.2023.">
+    <list default="true" id="5c013829-f403-4e4c-a9b4-ab122989e256" name="Changes" comment="Cuarto commit con los avances para el taller 3 de programacion avanzada, fecha: 19.05.2023.">
+      <change afterPath="$PROJECT_DIR$/csv_prueba.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BeatTheRhythm/Instrumento.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BeatTheRhythm/Instrumento.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BeatTheRhythm/Interface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BeatTheRhythm/Interface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BeatTheRhythm/ListaInstrumentos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BeatTheRhythm/ListaInstrumentos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BeatTheRhythm/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BeatTheRhythm/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BeatTheRhythm/Percusion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BeatTheRhythm/Percusion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BeatTheRhythm/interfaceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BeatTheRhythm/interfaceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Percusion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Percusion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/interfaceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaceImpl.java" afterDir="false" />
     </list>
-    <list id="50ca16b4-bf75-4006-a176-d37e0c67e988" name="Changes by diego" comment="">
+    <list id="50ca16b4-bf75-4006-a176-d37e0c67e988" name="Changes by diego" comment="Changes by diego del cuarto commit, 19.05.2023.">
+      <change beforePath="$PROJECT_DIR$/DiagramaClase.puml" beforeDir="false" afterPath="$PROJECT_DIR$/DiagramaClase.puml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ListaInstrumentos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListaInstrumentos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/interfaceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,33 +42,18 @@
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/src/interfaceImpl.java">
       <ranges>
-        <range start1="2" end1="4" start2="2" end2="2" changelist="50ca16b4-bf75-4006-a176-d37e0c67e988" />
-        <range start1="9" end1="9" start2="7" end2="11" changelist="5c013829-f403-4e4c-a9b4-ab122989e256" />
-        <range start1="14" end1="14" start2="16" end2="20" changelist="5c013829-f403-4e4c-a9b4-ab122989e256" />
-        <range start1="40" end1="40" start2="46" end2="51" changelist="50ca16b4-bf75-4006-a176-d37e0c67e988" />
-        <range start1="72" end1="72" start2="83" end2="86" changelist="50ca16b4-bf75-4006-a176-d37e0c67e988" />
-        <range start1="103" end1="103" start2="117" end2="120" changelist="50ca16b4-bf75-4006-a176-d37e0c67e988" />
-        <range start1="128" end1="128" start2="145" end2="148" changelist="50ca16b4-bf75-4006-a176-d37e0c67e988" />
-        <range start1="156" end1="156" start2="176" end2="184" changelist="50ca16b4-bf75-4006-a176-d37e0c67e988" />
-        <range start1="159" end1="160" start2="187" end2="188" changelist="5c013829-f403-4e4c-a9b4-ab122989e256" />
-        <range start1="170" end1="170" start2="198" end2="202" changelist="50ca16b4-bf75-4006-a176-d37e0c67e988" />
-        <range start1="178" end1="181" start2="210" end2="212" changelist="50ca16b4-bf75-4006-a176-d37e0c67e988" />
-        <range start1="199" end1="200" start2="230" end2="231" changelist="50ca16b4-bf75-4006-a176-d37e0c67e988" />
-        <range start1="209" end1="210" start2="240" end2="241" changelist="50ca16b4-bf75-4006-a176-d37e0c67e988" />
-        <range start1="223" end1="223" start2="254" end2="260" changelist="5c013829-f403-4e4c-a9b4-ab122989e256" />
-        <range start1="225" end1="226" start2="262" end2="271" changelist="50ca16b4-bf75-4006-a176-d37e0c67e988" />
-        <range start1="228" end1="228" start2="273" end2="279" changelist="5c013829-f403-4e4c-a9b4-ab122989e256" />
-        <range start1="238" end1="238" start2="289" end2="294" changelist="5c013829-f403-4e4c-a9b4-ab122989e256" />
-        <range start1="240" end1="241" start2="296" end2="345" changelist="50ca16b4-bf75-4006-a176-d37e0c67e988" />
-        <range start1="243" end1="243" start2="347" end2="352" changelist="5c013829-f403-4e4c-a9b4-ab122989e256" />
-        <range start1="248" end1="249" start2="357" end2="357" changelist="5c013829-f403-4e4c-a9b4-ab122989e256" />
+        <range start1="0" end1="0" start2="0" end2="2" changelist="5c013829-f403-4e4c-a9b4-ab122989e256" />
+        <range start1="2" end1="2" start2="4" end2="6" changelist="5c013829-f403-4e4c-a9b4-ab122989e256" />
+        <range start1="6" end1="6" start2="10" end2="75" changelist="5c013829-f403-4e4c-a9b4-ab122989e256" />
+        <range start1="11" end1="12" start2="80" end2="81" changelist="5c013829-f403-4e4c-a9b4-ab122989e256" />
+        <range start1="13" end1="13" start2="82" end2="83" changelist="5c013829-f403-4e4c-a9b4-ab122989e256" />
+        <range start1="167" end1="168" start2="237" end2="238" changelist="50ca16b4-bf75-4006-a176-d37e0c67e988" />
       </ranges>
     </file>
     <file path="$PROJECT_DIR$/src/Interface.java">
       <ranges>
-        <range start1="11" end1="12" start2="11" end2="12" changelist="5c013829-f403-4e4c-a9b4-ab122989e256" />
-        <range start1="19" end1="19" start2="19" end2="20" changelist="50ca16b4-bf75-4006-a176-d37e0c67e988" />
-        <range start1="24" end1="26" start2="25" end2="27" changelist="5c013829-f403-4e4c-a9b4-ab122989e256" />
+        <range start1="0" end1="0" start2="0" end2="2" changelist="5c013829-f403-4e4c-a9b4-ab122989e256" />
+        <range start1="8" end1="8" start2="10" end2="15" changelist="50ca16b4-bf75-4006-a176-d37e0c67e988" />
       </ranges>
     </file>
   </component>
@@ -75,17 +65,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultPlantUmlFileTemplate&quot;: &quot;UML Class&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/necul/Downloads/StdUCN-7.1.jar&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultPlantUmlFileTemplate": "UML Class",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/necul/IdeaProjects/BeatTheRhythm/src",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\necul\IdeaProjects\BeatTheRhythm\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\necul\IdeaProjects\BeatTheRhythm\src" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -144,7 +142,21 @@
       <option name="project" value="LOCAL" />
       <updated>1684446527350</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Cuarto commit con los avances para el taller 3 de programacion avanzada, fecha: 19.05.2023.">
+      <created>1684476040305</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684476040305</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Changes by diego del cuarto commit, 19.05.2023.">
+      <created>1684476078850</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1684476078850</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -154,6 +166,8 @@
     <MESSAGE value="Tercer commit con los avances para el taller 3 de programacion avanzada, fecha: 18.05.2023" />
     <MESSAGE value="Changes by diego, Del segundo commit, fecha: 06-05-2023" />
     <MESSAGE value="Changes by diego, Del tercer commit, fecha: 18-05-2023" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes by diego, Del tercer commit, fecha: 18-05-2023" />
+    <MESSAGE value="Cuarto commit con los avances para el taller 3 de programacion avanzada, fecha: 19.05.2023." />
+    <MESSAGE value="Changes by diego del cuarto commit, 19.05.2023." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes by diego del cuarto commit, 19.05.2023." />
   </component>
 </project>
