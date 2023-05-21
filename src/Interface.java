@@ -7,7 +7,7 @@ public interface Interface {
     * que serian: Agregar Instrumento,Vender instrumento,
     * consultar inventario, Cierre.
     */
-   void menu();
+   void menu() throws IOException;
 
    /**
     * Metodo que lee archivo y agrega instrumentos a la listas
@@ -38,7 +38,8 @@ public interface Interface {
    /**
     * al realizar una venta, se utiliza este metodo para desplegar por pantalla
     * que producto fue vendido y cual fue su valor
-    * @param
+    * @param nombreClase para identificar el tipo de instrumento que se esta vendiendo
+    * @param posicion para encontrar en la lista la posicion del instrumento consultado
     */
    void despliegueBoleta(String nombreClase, int posicion);
 
@@ -51,5 +52,5 @@ public interface Interface {
    /**
     * Cierra el programa y deja un mensaje al usuario
     */
-   void cierre();
+   void cierre() throws IOException;
 }

@@ -18,20 +18,16 @@ public class ListaInstrumentos {
 
     /**
      * Subprograma que entrega el instrumento de una posicion especifica en la lista
-     * @param pos es la posicion en la cual se buscara el instrumento
+     * @param posicion es la posicion en la cual se buscara el instrumento
      * @return el instrumento en la posicion mencionada
      */
-    public Instrumento obtenerInstrumento(int pos){
-        if(pos < 0 || pos >= this.cantidadActual){
+    public Instrumento obtenerInstrumento(int posicion){
+        //Verifica que sea una posicion correcta.
+        if(posicion < 0 || posicion >= this.cantidadActual){
             return null;
         }
-        return listaInstrumentos[pos];
+        return listaInstrumentos[posicion];
     }
-
-    public int getCantidadMax() {
-        return cantidadMax;
-    }
-
 
     /**
      * Subprograma que agrega un instrumento a la lista
@@ -51,6 +47,7 @@ public class ListaInstrumentos {
      * @param posicion en donde se encontraria ubicado el instrumento
      */
     public void informacion (String nombreClase, int posicion) {
+        //Despliega la informacion dependiendo de la clase del instrumento.
         switch (nombreClase) {
             case "Cuerda" -> {
                 Cuerda instrumento = (Cuerda) listaInstrumentos[posicion];
@@ -63,14 +60,17 @@ public class ListaInstrumentos {
                 int numeroCuerdas = instrumento.getNumeroCuerda();
                 String tipo = instrumento.getTipo();
                 StdOut.println(
+                                "___________________________________________" + "\n"+
+                                "Instrumento de cuerda" + "\n" +
                                 "Codigo Producto: " + codigo + "\n" +
                                 "Precio: " + precio + "\n" +
                                 "Stock: " + stock + "\n" +
                                 "Material: " + material + "\n" +
                                 "Nombre instrumento: " + nombreInst + "\n" +
                                 "Tipo de cuerda: " + cuerda + "\n" +
-                                "Numero de cuerdas" + numeroCuerdas + "\n" +
-                                "Tipo instrumento: " + tipo
+                                "Numero de cuerdas: " + numeroCuerdas + "\n" +
+                                "Tipo instrumento: " + tipo +  "\n" +
+                                "_____________________________________________"
                 );
             }
             case "Viento" -> {
@@ -81,6 +81,8 @@ public class ListaInstrumentos {
                 String material = instrumento.getMaterial();
                 String nombreInst = instrumento.getModeloInst();
                 StdOut.println(
+                        "___________________________________________" + "\n" +
+                        "Instrumento de viento" + "\n" +
                         "Codigo Producto: " + codigo + "\n" +
                         "Precio: " + precio + "\n" +
                         "Stock: " + Stock + "\n" +
@@ -97,6 +99,8 @@ public class ListaInstrumentos {
                 String tipo = instrumento.getTipo();
                 String altura = instrumento.getAltura();
                 StdOut.println(
+                        "___________________________________________" + "\n" +
+                        "Instrumento de percusion" + "\n" +
                         "Codigo Producto :" + codigo + "\n" +
                         "Precio: " + precio + "\n" +
                         "Nombre: " + nombreInst + "\n" +
