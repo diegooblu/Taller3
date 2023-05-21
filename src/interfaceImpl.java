@@ -1,5 +1,6 @@
 import ucn.*;
 import java.io.IOException;
+import java.util.InputMismatchException;
 
 public class interfaceImpl implements Interface {
 
@@ -173,6 +174,10 @@ public class interfaceImpl implements Interface {
      * Añade un instrumento de tipo cuerda con sus respectivos atributos
      */
     public void agregarInstCuerda() {
+        StdOut.println("--------------------------------------------------------------------------");
+        StdOut.println("¡IMPORTANTE! si ingresa un dato erroneo tendra que repetir el proceso.");
+        StdOut.println("--------------------------------------------------------------------------");
+        StdOut.print("");
         String codigo;
         StdOut.println("Ingrese los siguientes datos del instrumento de Cuerda.");
         //Ciclo que contiene las verificaciones para los datos del instrumento a agregar.
@@ -243,6 +248,10 @@ public class interfaceImpl implements Interface {
      */
     public void agregarInstViento() {
         String codigo;
+        StdOut.println("--------------------------------------------------------------------------");
+        StdOut.println("¡IMPORTANTE! si ingresa un dato erroneo tendra que repetir el proceso.");
+        StdOut.println("--------------------------------------------------------------------------");
+        StdOut.println("");
         StdOut.println("Ingrese los siguientes datos del instrumento de viento.");
         //Ciclo con los verificadores para los datos del instrumento a agregar.
         while (true) {
@@ -292,6 +301,10 @@ public class interfaceImpl implements Interface {
      */
     public void agregarInstPercusion() {
         String codigo;
+        StdOut.println("--------------------------------------------------------------------------");
+        StdOut.println("¡IMPORTANTE! si ingresa un dato erroneo tendra que repetir el proceso.");
+        StdOut.println("--------------------------------------------------------------------------");
+        StdOut.println("");
         StdOut.println("Ingrese los siguientes datos del instrumento de percusion.");
         //Ciclo con los verificadores correspondientes para la clase percusion.
         while (true) {
@@ -482,6 +495,7 @@ public class interfaceImpl implements Interface {
         String tipoBusqueda;
         StdOut.println("");
         StdOut.println("""
+                
                 Seleccione tipo de busqueda:
                                 
                 [1] Busqueda Especifica.

@@ -1,8 +1,8 @@
 public final class Percusion extends Instrumento{
 
-    private String modeloInst;
-    private String tipo;
-    private String altura;
+    final private String modeloInst;
+    final private String tipo;
+    final private String altura;
 
     public Percusion(String codigo, double precio, int stock, String material, String modeloInst, String tipo, String altura) {
         super(codigo, precio, stock, material);

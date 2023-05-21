@@ -11,6 +11,7 @@ package Diagrama {
         +getCodigo(): String
         +getPrecio(): double
         +getStock(): int
+        +getMaterial(): String
         +setStock(stock: int): void
     }
 
@@ -21,7 +22,7 @@ package Diagrama {
         -tipo: String
         +Cuerda(codigo: String, precio: double, stock: int, material: String
         modeloInst: String, cuerda: String, numeroCuerdas: int, tipo: String)
-        +getInstrumento(): String
+        +getModeloInst(): String
         +getCuerda(): String
         +getTipo(): String
         +getNumeroCuerdas(): int
@@ -55,10 +56,9 @@ package Diagrama {
         -cantidadMax: int
         +ListaInstrumentos(cantidadMax: int)
         +getCantidadActual(): int
-        +getCantidadMax(): int
         +agregar(instrumento: Instrumento): void
-        +getInstrumento(posicion: int): Instrumento
-        +Informacion(nombreClase: String, posicion: int)
+        +ObtenerInstrumento(posicion: int): Instrumento
+        +Informacion(nombreClase: String, posicion: int): void
     }
     ListaInstrumentos o->"*" Instrumento
 }
@@ -66,13 +66,15 @@ package Diagrama {
 package servicios {
 
     interface Interface{
+    +LecturaArchivo(): void
     +menu(): void
-    +agregarInstrumento(ListaInstrumentos: instrumento[]): void
-    +vender(codigo: int): void
-    +verificarStock(codigo: int): boolean
-    +despliegueBoleta(codigo: int):void
-    +consultarInventario(codigo: int): void
+    +agregarInstrumento(): void
+    +vender(): void
+    +verificarStock(codigo: Sring): boolean
+    +despliegueBoleta(nombreClase: String, posicion : int):void
+    +consultarInventario(): void
     +cierre(): void
+
     }
 
     class InterfaceImpl{

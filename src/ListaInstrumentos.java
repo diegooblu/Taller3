@@ -87,7 +87,8 @@ public class ListaInstrumentos {
                         "Precio: " + precio + "\n" +
                         "Stock: " + Stock + "\n" +
                         "Material: " + material + "\n" +
-                        "Nombre instrumento: " + nombreInst
+                        "Nombre instrumento: " + nombreInst + "\n" +
+                        "___________________________________________"
                 );
             }
             case "Percusion" -> {
@@ -106,7 +107,8 @@ public class ListaInstrumentos {
                         "Nombre: " + nombreInst + "\n" +
                         "Stock: " + Stock + "\n" +
                         "Tipo Percusion: " + tipo + "\n" +
-                        "Altura: " + altura
+                        "Altura: " + altura + "\n" +
+                        "___________________________________________"
                 );
             }
         }
